@@ -8,6 +8,12 @@ generateRuleTests({
   config: 2,
 
   good: [
+    '<div>\n' +
+      '  \\{{example}}\n' +
+      '</div>',
+    '{{{{if isMorning}}}}\n' +
+      '  Good Morning\n' +
+      '{{{{/if}}}}',
     '\n  {{#each cats as |dog|}}\n  {{/each}}',
     '<div><p>Stuff</p></div>',
     '<div>\n  <p>Stuff Here</p>\n</div>',
